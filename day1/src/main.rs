@@ -6,7 +6,7 @@ fn main() {
 }
 
 fn read_file() -> String {
-    return fs::read_to_string("./input.txt").expect("Could not read the file");
+    fs::read_to_string("./input.txt").expect("Could not read the file")
 }
 
 fn get_elfs_food() -> Vec<Vec<i32>> {
